@@ -37,6 +37,33 @@ for i := range M {
 }
 ```
 
+[Go 言語で標準入力から読み込む競技プログラミングのアレ --- 改訂第二版](https://qiita.com/tnoda_/items/b503a72eac82862d30c6)
+
+```go
+import (
+    "bufio"
+    "fmt"
+    "os"
+    "strconv"
+)
+
+var sc = bufio.NewScanner(os.Stdin)
+
+func nextInt() int {
+    sc.Scan()
+    i, e := strconv.Atoi(sc.Text())
+    if e != nil {
+        panic(e)
+    }
+    return i
+}
+
+func main() {
+    sc.Split(bufio.ScanWords)
+    n := nextInt()
+}
+```
+
 ## スライス
 
 スライスは配列と異なり、可変長  
