@@ -38,6 +38,7 @@ for i := range M {
 ```
 
 [Go 言語で標準入力から読み込む競技プログラミングのアレ --- 改訂第二版](https://qiita.com/tnoda_/items/b503a72eac82862d30c6)
+[[Go] AtCoderで標準入力するためのスニペット](https://qrunch.net/@koralle/entries/8WVq0MS18Aws4s84?ref=qrunch)
 
 ```go
 import (
